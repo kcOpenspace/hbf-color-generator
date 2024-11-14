@@ -11,6 +11,9 @@ So Pivoted to React.
 Used Copilot to initialise the color logic in the generateColor function.
 Due to time constraints.
 Needs refinement and re purposing as it does not seem to do the job as invisioned.
+possibly define fixed pixel widths and assign the colors to each one so it fits the the full dimensions of the canvas.
+
+Need to make responsive
 
 ## Options
 To include an image download button.

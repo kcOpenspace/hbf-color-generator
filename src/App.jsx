@@ -1,15 +1,19 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from './pages/HomePage'
+import Container from '@mui/material/Container'
+import Box from '@mui/material/Box'
 
 const App = () => {
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-            <Route exact path='/' element={<HomePage />}></Route>
-        </Routes>
-      </Router>
-    </div>
+    <Container className="App">
+      <Box bgcolor={'primary.main'}>
+        <Router>
+          <Routes>
+              <Route exact path='/' element={<HomePage />}></Route>
+          </Routes>
+        </Router>
+      </Box>
+    </Container>
   )
 }
 

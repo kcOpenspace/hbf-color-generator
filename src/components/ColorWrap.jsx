@@ -30,19 +30,18 @@ const ColorWrap = () => {
 
   const handleGenerateColors = () => {
     const colors = generateColors()
-    console.log('clicking',colors)
     setRandomColors(colors)
   } 
 
   return (
     <>
-      <Container maxWidth="x1">
+      <Container maxWidth="x1" sx={{ position: 'relative', padding:'20px' }}>
         <Box sx={{ my: 4 }}>
-          <Typography variant="h3" color='secondary'>Color Map Wrap</Typography>
+          <Typography variant="h3">Color Map Wrap</Typography>
         </Box>
         <Box sx={{ my: 10 }}>
           <Stack direction="row" spacing={2} sx={{marginBottom: 2}}>
-            <Button variant="contained" color="primary" onClick={handleGenerateColors}>
+            <Button variant="contained" color="secondary" bg onClick={handleGenerateColors}>
               Generate new image
             </Button>
           </Stack>
@@ -50,6 +49,9 @@ const ColorWrap = () => {
           <div id='image-container'>
             <ColorGenerator randomColors={randomColors} />
           </div>
+
+          <img style={{position:'absolute',bottom:0,right:0,height:'80%'}} src="https://www.hbf.com.au/-/jssmedia/project/hbf/hbf-web-app/images/hero-banners/homepage-hero-members-go-live.jpg?h=508&iar=0&w=630&rev=a2bfa2f84d544d05a03b16cbac2fe6f9&mw=640" alt="hbf quokka"/>
+
         </Box>
       </Container>
     </>
