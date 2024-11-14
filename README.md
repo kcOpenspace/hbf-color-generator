@@ -1,8 +1,19 @@
-# React + Vite
+# QUICK README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Booting up the app
+Quick npm install packages and np run dev to start the app.
 
-Currently, two official plugins are available:
+# Thoughts on project
+Initially attempted to bootstrap the project wiht Preact/Typescript but soon ran into hurdles with getting it configured to start. Nothing that can't be fixed but required time to configure working properly.
+Possibly a bit overkill for this demo.
+So Pivoted to React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Used Copilot to initialise the color logic in the generateColor function.
+Due to time constraints.
+Needs refinement and re purposing as it does not seem to do the job as invisioned.
+
+## Options
+To include an image download button.
+
+## WANTED TO
+Wanted to spend more time in styling the site with basic header and footer components and add more aesthetics. 
